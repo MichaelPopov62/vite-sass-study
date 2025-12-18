@@ -1,0 +1,13 @@
+@use "sass:math";
+@use "btn-scema" as vars with($font-size:10px,$btn-bgcolor:blue,$btn-color:yellow);
+@use "scopes";
+
+.smail-btn{
+  font-size:vars.$font-size;
+  color: vars.$btn-color;
+  background-color: vars.$btn-bgcolor;
+
+}
+
+.button{width: math.div(100px, 2);}
+@debug math.$pi;

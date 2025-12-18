@@ -1,0 +1,35 @@
+// /*cibab-case*/
+// $color-primary-text:#888;
+// $color-blue-text: lightblue;
+// /*cemal-case*/
+// $colorPrimaryText:#888;
+// $colorBlueText: lightblue;
+// /*snace-case*/
+// $color_primary_text:#888;
+// $color_blue_text: lightblue;
+
+$font-size:16px;
+.title{
+  font-size: $font-size;
+
+}
+$font-size:10px;
+.subtitle{
+  font-size: $font-size;
+}
+
+// .button {
+//   color: red;
+// }
+
+// .button {
+//   color: blue;
+// }
+
+$color: blue;
+
+$color: red;
+
+.button {
+  color: $color;
+}
