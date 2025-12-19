@@ -1,7 +1,8 @@
-$color-primary:teal;//глобальна область
+$color-primary:rgb(160, 225, 39);//глобальна область
+$color-secondary: null;
 body{
   $color-primary:lightblue;//local scope
-  $color-secondary:white !global;
+  $color-secondary:rgb(231, 16, 16) !global;
   background-color:$color-primary;
 }
 p{
