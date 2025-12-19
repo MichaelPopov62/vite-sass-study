@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vite-sass--study/",
+    "build": "vite build --base=/vite-sass-study/",
     "preview": "vite preview",
-    "watch": "npx vite build --watch"
+    "watch": "npx vite build --watch",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "cover 99.5%"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "fast-glob": "^3.3.1",
+    "gh-pages": "^6.3.0",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^8.0.0",
     "postcss-sort-media-queries": "^5.2.0",
