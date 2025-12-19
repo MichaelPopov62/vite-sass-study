@@ -1,0 +1,63 @@
+.section {
+  width: 100%;
+}
+.section .title {
+  color: teal;
+}
+.section .text {
+  font-size: 14px;
+  color: rgb(64, 24, 207);
+}
+
+.link {
+  color: black;
+}
+.link:hover, .link:focus {
+  color: red;
+}
+
+.button {
+  background: teal;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: red;
+}
+.button:hover, .button:focus {
+  color: blue;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+}
+.button-icon:hover {
+  width: 50px;
+  height: 50px;
+}
+.button:hover .button-icon {
+  font-size: 20px;
+}
+
+.button-label {
+  font-size: 16px;
+}
+.button:hover .button-label {
+  font-size: 20px;
+}
+
+/**
+  |============================
+  | Using combinators in SASS
+  |============================
+*/
+ul > li {
+  list-style: none;
+}
+
+h2 + p {
+  border-top: 1px solid gray;
+}
+
+p ~ span {
+  opacity: 0.8;
+}
