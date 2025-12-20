@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.home {
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 24px;
+  color: #d20c0c;
+  text-align: center;
+}
+
+ul.lesson-list {
+  list-style: none; /* прибираємо стандартні крапки */
+  padding: 0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column; /* вертикально */
+  gap: 10px; /* відстань між елементами */
+}
+
+ul.lesson-list li a {
+  display: block;
+  text-decoration: none; /* прибираємо підкреслення */
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f0f0f0; /* світлий фон */
+  color: #333;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+ul.lesson-list li a:hover {
+  background-color: #8df822; /* підсвічування при наведенні */
+  color: #000;
+  -webkit-transform: translateX(5px);
+     -moz-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px); /* легкий рух вправо */
+}

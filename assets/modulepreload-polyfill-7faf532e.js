@@ -39,4 +39,3 @@
     fetch(link.href, fetchOpts);
   }
 })();
-const main = "";
