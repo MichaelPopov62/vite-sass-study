@@ -1,15 +1,33 @@
-.page{
-  display:flex ;
-  flex-direction: column;
-  justify-content:center ;
-  align-items: center;
-  gap:50px;
-  min-height: 100vh;
-  font-family: sans-serif;
-  background-color: #292932;
+.home{
+  background-color: aqua;
 }
-.page-title{
-  font-size:96px ;
-  font-weight:600 ;
-  color: #fafafb;
+h1{
+  font-size: 24px;
+  color: #d20c0c;
+  text-align: center;
+}
+ul.lesson-list {
+  list-style: none; /* прибираємо стандартні крапки */
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* вертикально */
+  gap: 10px; /* відстань між елементами */
+}
+
+ul.lesson-list li a {
+  display: block;
+  text-decoration: none; /* прибираємо підкреслення */
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f0f0f0; /* світлий фон */
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+ul.lesson-list li a:hover {
+  background-color: #8df822; /* підсвічування при наведенні */
+  color: #000;
+  transform: translateX(5px); /* легкий рух вправо */
 }
