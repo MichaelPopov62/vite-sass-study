@@ -1,0 +1,70 @@
+/*|============================
+  | Додавання & Віднімання
+  |============================
+*/
+@use "sass:math";
+.box {
+  width: 600px + 50px;
+  width: 600px - 180px;
+  background-color: rgb(141, 213, 26);
+}
+/*|============================
+  | Множення & Ділення
+  |============================
+*/
+$vaule: 500px;
+.box {
+  width: 70px * 5;
+  width: 80px * 2 + 80px;
+  width:2 * 800px + 40px;
+
+  width:math.div($vaule, 2);//значення в змінній
+  width: math.div(600px, 6);//операція в дужках
+  width:math.div(600px, 3) + 500px;
+
+  @debug calc(600px / 3);
+  @debug calc(600px / 3px);
+  @debug calc(600px / 2);
+}
+/*|============================
+  | Інтерполяція-обрахування даних змінних в результаті операціі
+  |============================
+*/
+$margin: 100px;
+.box {
+  width: $margin * 2;
+}
+.box {
+ 
+  width:#{$margin * 4};
+}
+$state: active;
+
+.btn-#{$state} {
+  color: red;
+}
+
+$gap: 20px;
+.box {
+  width: calc(100% - #{$gap});
+}
+
+/*====діректива @each====*/
+
+$colors: red, green, blue;
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+$sizes: 10px, 20px, 30px;
+
+@each $size in $sizes {
+  .box-#{$size} {
+    width: $size;
+    height: $size;
+  }
+}
+
