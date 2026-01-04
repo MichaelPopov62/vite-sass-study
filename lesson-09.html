@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sass mixins demo</title>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+     
+  <script type="module" crossorigin src="/vite-sass-study/assets/lesson-09-fbada18d.js"></script>
+  <link rel="modulepreload" crossorigin href="/vite-sass-study/assets/modulepreload-polyfill-7faf532e.js">
+  <link rel="stylesheet" href="/vite-sass-study/assets/lesson-09.css">
+</head>
+<body>
+
+  <!-- frame-size + %size -->
+  <section>
+ 
+
+    <div class="icon">   <img
+      class="avatar"
+      src="data:image/png;base64,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" width="20"
+height="20"      alt="User avatar"
+    /></div>
+  </section>
+
+  <!-- position-center / position -->
+  <section style="position: relative; height: 300px; background: #f5f5f5;">
+    <div class="decoration">
+      Centered decoration
+    </div>
+  </section>
+
+  <!-- buttons: sizes -->
+  <section>
+    <button class="btn-sm">Small</button>
+    <button class="btn-md">Medium</button>
+    <button class="btn-lg">Large</button>
+    <button class="btn-xl">Extra Large</button>
+  </section>
+
+  <!-- buttons: types -->
+  <section>
+    <button class="btn-md btn-success">Success</button>
+    <button class="btn-md btn-error">Error</button>
+    <button class="btn-md btn-info">Info</button>
+  </section>
+
+  <!-- hover + disabled state -->
+  <section>
+    <button class="button">
+      Hover me
+    </button>
+
+    <button class="button" disabled>
+      Disabled
+    </button>
+  </section>
+  
+</body>
+</html>
