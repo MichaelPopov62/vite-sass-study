@@ -134,6 +134,15 @@ ul.lesson-list li a:hover {
           align-items: center;
 }
 
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box {
+  background-color: #f15c27;
+}
+
 .decoration {
   position: absolute;
   top: 50%;
@@ -142,6 +151,7 @@ ul.lesson-list li a:hover {
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: aqua;
 }
 
 .decoration {
@@ -204,6 +214,29 @@ ul.lesson-list li a:hover {
 .btn-xl {
   padding: 16px 20px;
   border-radius: 20px;
+}
+
+.btn-examples {
+  padding: 15px;
+  background-color: #a1df10;
+  border-radius: 12px;
+  color: white;
+}
+
+.btn-red {
+  padding: 15px;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+}
+
+.btn-examples:hover,
+.btn-red:hover,
+.btn-examples:hover,
+.btn-red:focus {
+  background-color: #f15c27;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
+          box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
 }
 
 .btn-success {
